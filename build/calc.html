@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <input id="screen" type="text" placeholder="0" />
+      </div>
+      <div class="btns">
+        <div class="row">
+          <button onclick="memory_store()">MS</button>
+          <button onclick="memory_read()">MR</button>
+          <button onclick="memory_clear()">MC</button>
+          <button onclick="memoryMinus()">M-</button>
+          <button onclick="memoryPlus()">M+</button>
+          <button id="ce" onclick="backspc()">⌫</button>
+        </div>
+        <div class="row">
+          <button class="btn">%</button>
+          <button onclick="fact()">n!</button>
+          <button class="btn">(</button>
+          <button class="btn">)</button>
+          <button onclick="onebyx()">1/x</button>
+          <button id="ac" onclick="screenVal.value=''">AC</button>
+        </div>
+        <div class="row">
+          <button onclick="sin()">sin</button>
+          <button onclick="pi()">π</button>
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn">/</button>
+        </div>
+        <div class="row">
+          <button onclick="cos()">cos</button>
+          <button onclick="log()">log</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn">*</button>
+        </div>
+        <div class="row">
+          <button onclick="tan()">tan</button>
+          <button onclick="sqrt()">√</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">-</button>
+        </div>
+        <div class="row">
+          <button onclick="e()">e</button>
+          <button onclick="pow()">x²</button>
+          <button class="btn">.</button>
+          <button class="btn">0</button>
+          <button onclick="exp()">exp</button>
+          <button class="btn">+</button>
+        </div>
+        <div class="row">
+          <button onclick="ln()">ln</button>
+          <button onclick="power()">10^X</button>
+          <button onclick="absolute()">|X|</button>
+          <button onclick="random()">random</button>
+          <button onclick="plusMinus()">+/-</button>
+          <button id="eval" onclick="screenVal.value=eval(screenVal.value)">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
