@@ -1,6 +1,6 @@
-let screenVal: any = document.querySelector("#screen");
+let screenVal: any = document.querySelector("#screen")! as HTMLInputElement;
 
-let btn: any = document.querySelectorAll(".btn");
+let btn: any = document.querySelectorAll(".btn")!;
 
 let item: any, btntext: any;
 for (item of btn) {
